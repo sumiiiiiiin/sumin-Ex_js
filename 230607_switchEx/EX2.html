@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <!--
+        입력받은 커피와 가격 출력
+        아메리카노: 15000, 카페라떼: 20000, 카페모카: 20000, 바닐라라떼: 25000
+        그 외는 메뉴에 있는 커피만 주문 가능합니다 출력
+        -->
+
+    <script>
+        const menu = prompt('커피를 주문해주세요');
+
+        switch (menu) {
+            case "아메리카노":
+                document.body.innerHTML = '아메리카노: 15000';
+                break;
+            case "카페라떼":
+                document.body.innerHTML = '카페라떼: 20000';
+                break;
+            case "카페모카":
+                document.body.innerHTML = '카페모카: 20000';
+                break;
+            case "바닐라라떼":
+                document.body.innerHTML = '바닐라라떼: 25000';
+                break;
+            default:
+                document.body.innerHTML = `메뉴에 있는 커피만 주문가능합니다`;
+                break;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <!--
+        아이디를 입력받아 참인 경우 비밀번호 입력을 받고
+        비밀번호도 참인 경우 '로그인 되었습니다' 출력
+        아이디가 거짓인 경우 '아이디가 틀렸습니다' 출력
+        -->
+    <script>
+        const defaultId = 'web';
+        const defaultPw = 1234;
+
+        let userId = prompt('아이디를 입력하세요');
+
+        switch (userID) {
+            case 'web':
+                break;
+                if (userId === defaultId) {
+                    alert('아이디가 일치합니다');
+
+                    let userPw = prompt('비밀번호 입력하세요');
+                    userPw = + userPw;
+                    console.log(typeof userPw);
+
+                    if (userPw === defaultPw) {
+                        alert('로그인 되었습니다');
+                    } else {
+                        alert('아이디가 틀렸습니다');
+                    }
+                }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
