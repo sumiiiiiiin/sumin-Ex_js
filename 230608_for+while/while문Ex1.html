@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <!--
+        1. 입력 받은 구구단 출력
+        2~9단 외의 숫자 입력시 에러 메시지 출력 
+    -->
+
+    <script>
+        const num = prompt('구구단을 입력하세요');
+
+        if (num >= 2 && num <= 9) {
+            let i = 1;
+            while (i <= 9) {
+                console.log(`${num} * ${i} = ${num * i}`);
+                i++;
+            }
+        } else {
+            console.log('에러입니다')
+        }
+    </script>
+</body>
+
+</html>

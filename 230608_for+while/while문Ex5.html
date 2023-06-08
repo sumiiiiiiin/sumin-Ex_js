@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <!--
+        while :  1부터 몇까지 더해야 3000을 넘길 수 있는지
+        -->
+    <script>
+        let i = 1;
+        let total = 0;
+        while (true) {
+            total += i;
+            total = i + total;
+            if (total > 3000) {
+                break;
+
+                i++;
+            }
+        }
+
+        console.log(`1부터 ${i}까지 더하면 ${total}으로 3000을 넘는다`);
+    </script>
+</body>
+
+</html>
